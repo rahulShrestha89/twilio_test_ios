@@ -4,7 +4,7 @@ platform :ios, '9.2'
 use_frameworks!
 
 target 'TwilioTest' do
-pod "SlackTextViewController"
+    #pod "SlackTextViewController"
 end
 
 target 'TwilioTestTests' do
