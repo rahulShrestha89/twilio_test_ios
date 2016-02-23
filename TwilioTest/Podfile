@@ -5,6 +5,7 @@ use_frameworks!
 
 target 'TwilioTest' do
     #pod "SlackTextViewController"
+    pod 'TwilioSDK', '~>1.2'
 end
 
 target 'TwilioTestTests' do

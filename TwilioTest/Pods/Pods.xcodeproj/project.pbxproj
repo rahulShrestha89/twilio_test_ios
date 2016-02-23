@@ -6,43 +6,212 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5CCD71C5465D132BF38A419E8142E732 /* Pods-TwilioTest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE87EC4BBBADC129D0543CE3A2A06630 /* Pods-TwilioTest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		818417E34CF78BBBF9B7B24701866B35 /* Pods-TwilioTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B99579450210F9E719FF7AE58B50E462 /* Pods-TwilioTest-dummy.m */; };
+		8C00CBAB867A023E469B4A32E549755E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		04E372CE50761B8F9D64A0888A5C9420 /* dtmf_5.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; name = dtmf_5.wav; path = Resources/dtmf_5.wav; sourceTree = "<group>"; };
+		0E160312780BDDFA92351B0099E2031E /* libTwilioClient.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libTwilioClient.a; path = Libraries/libTwilioClient.a; sourceTree = "<group>"; };
+		23AF943126F9A797BCFFB2F095C61D07 /* dtmf_2.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; name = dtmf_2.wav; path = Resources/dtmf_2.wav; sourceTree = "<group>"; };
+		3809B43CA8F28C383487E698DD0841F3 /* dtmf_7.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; name = dtmf_7.wav; path = Resources/dtmf_7.wav; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		544F7F8B0F18397B78AB123D1F7B00CF /* Pods-TwilioTest-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TwilioTest-resources.sh"; sourceTree = "<group>"; };
+		55F1FE1E6CC1ED9D8A4F5D88402AF599 /* Pods-TwilioTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TwilioTest.debug.xcconfig"; sourceTree = "<group>"; };
+		5A56853070C193B62425975E5F70D05B /* Pods-TwilioTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TwilioTest.release.xcconfig"; sourceTree = "<group>"; };
+		6B14213E0ED29F538371FC0F920A010A /* TCConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TCConnection.h; path = Headers/TCConnection.h; sourceTree = "<group>"; };
+		6DE11AD59FA9A53E8055B8B3DC89564B /* incoming.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; name = incoming.wav; path = Resources/incoming.wav; sourceTree = "<group>"; };
+		6F93FECC773BB054612FC825FFC2029F /* TCDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TCDevice.h; path = Headers/TCDevice.h; sourceTree = "<group>"; };
+		86479D40B357B36A181713F7B9AC8C28 /* dtmf_hash.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; name = dtmf_hash.wav; path = Resources/dtmf_hash.wav; sourceTree = "<group>"; };
+		90CB4B499791AB4FF9D9877D20788FE2 /* dtmf_9.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; name = dtmf_9.wav; path = Resources/dtmf_9.wav; sourceTree = "<group>"; };
+		938F75ABFDCF0BDC412729F294C1E4D6 /* dtmf_star.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; name = dtmf_star.wav; path = Resources/dtmf_star.wav; sourceTree = "<group>"; };
+		9739DECA381F6AEF6FD6C6698E1B705F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		990B5B7345EFC2BC49E1182B22A33CA3 /* TwilioClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TwilioClient.h; path = Headers/TwilioClient.h; sourceTree = "<group>"; };
+		A22A0FB660623D6A393038FE727AA1C2 /* TCConnectionDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TCConnectionDelegate.h; path = Headers/TCConnectionDelegate.h; sourceTree = "<group>"; };
+		B4A3690902911C3F2A49B076DD056C11 /* outgoing.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; name = outgoing.wav; path = Resources/outgoing.wav; sourceTree = "<group>"; };
+		B68FF17F95E57A04903A3D4E90DBCB12 /* TCPresenceEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TCPresenceEvent.h; path = Headers/TCPresenceEvent.h; sourceTree = "<group>"; };
+		B99579450210F9E719FF7AE58B50E462 /* Pods-TwilioTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TwilioTest-dummy.m"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB53F658D7A6503CEC37F390AF2B7589 /* Pods-TwilioTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TwilioTest-acknowledgements.plist"; sourceTree = "<group>"; };
+		BDDAF4FE0B6D401348F387F21E85F835 /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = Libraries/libcrypto.a; sourceTree = "<group>"; };
+		C1F9F02A64F039E1D0B8EC6217D2EA60 /* TCDeviceDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TCDeviceDelegate.h; path = Headers/TCDeviceDelegate.h; sourceTree = "<group>"; };
+		CD0FA65E5FA26255A5F9A6C2375DE400 /* Pods_TwilioTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwilioTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEBA1C568779A0103EC7BFECD83129D8 /* dtmf_4.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; name = dtmf_4.wav; path = Resources/dtmf_4.wav; sourceTree = "<group>"; };
+		D1C92EF031653A0FDB06733CEAAA28EE /* Pods-TwilioTest-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TwilioTest-frameworks.sh"; sourceTree = "<group>"; };
+		DD3A9CC9814665DBCEAC6153C0755AD0 /* dtmf_6.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; name = dtmf_6.wav; path = Resources/dtmf_6.wav; sourceTree = "<group>"; };
+		DF2E2D18B1D79707FBAAA11E9A01A985 /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = Libraries/libssl.a; sourceTree = "<group>"; };
+		E153C9AC73200710C6BDAF76F95E8F3E /* dtmf_3.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; name = dtmf_3.wav; path = Resources/dtmf_3.wav; sourceTree = "<group>"; };
+		F0503C14B3B55BADAF8B6C26F57A2AD0 /* dtmf_0.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; name = dtmf_0.wav; path = Resources/dtmf_0.wav; sourceTree = "<group>"; };
+		F25D7B3F9FC50B5862CB6AFCC0D44158 /* Pods-TwilioTest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TwilioTest-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F8BCC35FEB03C17BBDCA714C0CA92518 /* dtmf_8.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; name = dtmf_8.wav; path = Resources/dtmf_8.wav; sourceTree = "<group>"; };
+		FA5F75D3D91051D50BC7586BE5426FCB /* Pods-TwilioTest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TwilioTest.modulemap"; sourceTree = "<group>"; };
+		FA862F42582A1B8402697F7EC58391CA /* disconnect.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; name = disconnect.wav; path = Resources/disconnect.wav; sourceTree = "<group>"; };
+		FD069B433EE747EDBB86C1FF340FA09D /* dtmf_1.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; name = dtmf_1.wav; path = Resources/dtmf_1.wav; sourceTree = "<group>"; };
+		FE87EC4BBBADC129D0543CE3A2A06630 /* Pods-TwilioTest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TwilioTest-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		42C0BE405BECF00CF9AD440047CDB1E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C00CBAB867A023E469B4A32E549755E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
-		09C5E90726D2521A760312DBF50D9358 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
-				09C5E90726D2521A760312DBF50D9358 /* Products */,
-				F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F082EC7E41DBAA183CFD60CBEFE207B4 /* Pods */,
+				B858EB301BF57E851007D3A6F7E0B4E2 /* Products */,
+				F0683F97D9ED4964268755E7EB48B668 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */ = {
+		A3B999D77F5A926EDDD1128D798236D2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FA862F42582A1B8402697F7EC58391CA /* disconnect.wav */,
+				F0503C14B3B55BADAF8B6C26F57A2AD0 /* dtmf_0.wav */,
+				FD069B433EE747EDBB86C1FF340FA09D /* dtmf_1.wav */,
+				23AF943126F9A797BCFFB2F095C61D07 /* dtmf_2.wav */,
+				E153C9AC73200710C6BDAF76F95E8F3E /* dtmf_3.wav */,
+				CEBA1C568779A0103EC7BFECD83129D8 /* dtmf_4.wav */,
+				04E372CE50761B8F9D64A0888A5C9420 /* dtmf_5.wav */,
+				DD3A9CC9814665DBCEAC6153C0755AD0 /* dtmf_6.wav */,
+				3809B43CA8F28C383487E698DD0841F3 /* dtmf_7.wav */,
+				F8BCC35FEB03C17BBDCA714C0CA92518 /* dtmf_8.wav */,
+				90CB4B499791AB4FF9D9877D20788FE2 /* dtmf_9.wav */,
+				86479D40B357B36A181713F7B9AC8C28 /* dtmf_hash.wav */,
+				938F75ABFDCF0BDC412729F294C1E4D6 /* dtmf_star.wav */,
+				6DE11AD59FA9A53E8055B8B3DC89564B /* incoming.wav */,
+				B4A3690902911C3F2A49B076DD056C11 /* outgoing.wav */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B858EB301BF57E851007D3A6F7E0B4E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD0FA65E5FA26255A5F9A6C2375DE400 /* Pods_TwilioTest.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CABAA6B49344E510EBC3EA913CE6BA7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDDAF4FE0B6D401348F387F21E85F835 /* libcrypto.a */,
+				DF2E2D18B1D79707FBAAA11E9A01A985 /* libssl.a */,
+				0E160312780BDDFA92351B0099E2031E /* libTwilioClient.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE7F46966A9EA849B9A4FDC616720E58 /* Pods-TwilioTest */ = {
+			isa = PBXGroup;
+			children = (
+				9739DECA381F6AEF6FD6C6698E1B705F /* Info.plist */,
+				FA5F75D3D91051D50BC7586BE5426FCB /* Pods-TwilioTest.modulemap */,
+				F25D7B3F9FC50B5862CB6AFCC0D44158 /* Pods-TwilioTest-acknowledgements.markdown */,
+				BB53F658D7A6503CEC37F390AF2B7589 /* Pods-TwilioTest-acknowledgements.plist */,
+				B99579450210F9E719FF7AE58B50E462 /* Pods-TwilioTest-dummy.m */,
+				D1C92EF031653A0FDB06733CEAAA28EE /* Pods-TwilioTest-frameworks.sh */,
+				544F7F8B0F18397B78AB123D1F7B00CF /* Pods-TwilioTest-resources.sh */,
+				FE87EC4BBBADC129D0543CE3A2A06630 /* Pods-TwilioTest-umbrella.h */,
+				55F1FE1E6CC1ED9D8A4F5D88402AF599 /* Pods-TwilioTest.debug.xcconfig */,
+				5A56853070C193B62425975E5F70D05B /* Pods-TwilioTest.release.xcconfig */,
+			);
+			name = "Pods-TwilioTest";
+			path = "Target Support Files/Pods-TwilioTest";
+			sourceTree = "<group>";
+		};
+		F0683F97D9ED4964268755E7EB48B668 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE7F46966A9EA849B9A4FDC616720E58 /* Pods-TwilioTest */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		F082EC7E41DBAA183CFD60CBEFE207B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8956BADAF1DBBD6E3C9B3CD38F48ED0 /* TwilioSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F8956BADAF1DBBD6E3C9B3CD38F48ED0 /* TwilioSDK */ = {
+			isa = PBXGroup;
+			children = (
+				6B14213E0ED29F538371FC0F920A010A /* TCConnection.h */,
+				A22A0FB660623D6A393038FE727AA1C2 /* TCConnectionDelegate.h */,
+				6F93FECC773BB054612FC825FFC2029F /* TCDevice.h */,
+				C1F9F02A64F039E1D0B8EC6217D2EA60 /* TCDeviceDelegate.h */,
+				B68FF17F95E57A04903A3D4E90DBCB12 /* TCPresenceEvent.h */,
+				990B5B7345EFC2BC49E1182B22A33CA3 /* TwilioClient.h */,
+				CABAA6B49344E510EBC3EA913CE6BA7B /* Frameworks */,
+				A3B999D77F5A926EDDD1128D798236D2 /* Resources */,
+			);
+			path = TwilioSDK;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EBA168D589F8461499F109A6B28A334D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CCD71C5465D132BF38A419E8142E732 /* Pods-TwilioTest-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9644FA17940DF7AE0D80D156BC1B319A /* Pods-TwilioTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D2F51A568A89C95C4F1EC7520CB29B5 /* Build configuration list for PBXNativeTarget "Pods-TwilioTest" */;
+			buildPhases = (
+				A069BBF333ED2BAFED4298F81AD5A680 /* Sources */,
+				42C0BE405BECF00CF9AD440047CDB1E0 /* Frameworks */,
+				EBA168D589F8461499F109A6B28A334D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TwilioTest";
+			productName = "Pods-TwilioTest";
+			productReference = CD0FA65E5FA26255A5F9A6C2375DE400 /* Pods_TwilioTest.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
@@ -59,15 +228,87 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 09C5E90726D2521A760312DBF50D9358 /* Products */;
+			productRefGroup = B858EB301BF57E851007D3A6F7E0B4E2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				9644FA17940DF7AE0D80D156BC1B319A /* Pods-TwilioTest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXSourcesBuildPhase section */
+		A069BBF333ED2BAFED4298F81AD5A680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				818417E34CF78BBBF9B7B24701866B35 /* Pods-TwilioTest-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
 /* Begin XCBuildConfiguration section */
+		5AEA93134BC5AA07E4E6955E59A17478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A56853070C193B62425975E5F70D05B /* Pods-TwilioTest.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TwilioTest/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TwilioTest/Pods-TwilioTest.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_TwilioTest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		75B9C0ED2B777ED8A063571F5C134B8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55F1FE1E6CC1ED9D8A4F5D88402AF599 /* Pods-TwilioTest.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TwilioTest/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TwilioTest/Pods-TwilioTest.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_TwilioTest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -149,6 +390,15 @@
 			buildConfigurations = (
 				8D1534490D941DCA47C62AC4314182AF /* Debug */,
 				C5A18280E9321A9268D1C80B7DA43967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D2F51A568A89C95C4F1EC7520CB29B5 /* Build configuration list for PBXNativeTarget "Pods-TwilioTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75B9C0ED2B777ED8A063571F5C134B8A /* Debug */,
+				5AEA93134BC5AA07E4E6955E59A17478 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
