@@ -14,6 +14,8 @@
 		539F63521C7CE48500720C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539F63501C7CE48500720C4B /* LaunchScreen.storyboard */; };
 		539F635D1C7CE48500720C4B /* TwilioTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539F635C1C7CE48500720C4B /* TwilioTestTests.swift */; };
 		539F63681C7CE48500720C4B /* TwilioTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539F63671C7CE48500720C4B /* TwilioTestUITests.swift */; };
+		539F63761C7CE52700720C4B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539F63751C7CE52700720C4B /* MainViewController.swift */; };
+		8065AD0EBD4BE6D75A412329 /* Pods_TwilioTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 920327223A0D7CA2DF8C01C4 /* Pods_TwilioTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,10 @@
 		539F63631C7CE48500720C4B /* TwilioTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwilioTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		539F63671C7CE48500720C4B /* TwilioTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioTestUITests.swift; sourceTree = "<group>"; };
 		539F63691C7CE48500720C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		539F63751C7CE52700720C4B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		920327223A0D7CA2DF8C01C4 /* Pods_TwilioTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwilioTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93223085C27E0782A392E54B /* Pods-TwilioTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwilioTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwilioTest/Pods-TwilioTest.release.xcconfig"; sourceTree = "<group>"; };
+		CFC509B8FA0D54DD8505908F /* Pods-TwilioTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwilioTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwilioTest/Pods-TwilioTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8065AD0EBD4BE6D75A412329 /* Pods_TwilioTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52F629620DAC2A97C8BD3C0B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFC509B8FA0D54DD8505908F /* Pods-TwilioTest.debug.xcconfig */,
+				93223085C27E0782A392E54B /* Pods-TwilioTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		539F633B1C7CE48400720C4B = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +97,8 @@
 				539F635B1C7CE48500720C4B /* TwilioTestTests */,
 				539F63661C7CE48500720C4B /* TwilioTestUITests */,
 				539F63451C7CE48500720C4B /* Products */,
+				52F629620DAC2A97C8BD3C0B /* Pods */,
+				ADE451E8D36C993DAA1D18CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +118,7 @@
 				539F63471C7CE48500720C4B /* AppDelegate.swift */,
 				539F63491C7CE48500720C4B /* ViewController.swift */,
 				539F634B1C7CE48500720C4B /* Main.storyboard */,
+				539F63751C7CE52700720C4B /* MainViewController.swift */,
 				539F634E1C7CE48500720C4B /* Assets.xcassets */,
 				539F63501C7CE48500720C4B /* LaunchScreen.storyboard */,
 				539F63531C7CE48500720C4B /* Info.plist */,
@@ -125,6 +144,14 @@
 			path = TwilioTestUITests;
 			sourceTree = "<group>";
 		};
+		ADE451E8D36C993DAA1D18CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				920327223A0D7CA2DF8C01C4 /* Pods_TwilioTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 539F636C1C7CE48500720C4B /* Build configuration list for PBXNativeTarget "TwilioTest" */;
 			buildPhases = (
+				3F78872EE20F1B47F14763E0 /* Check Pods Manifest.lock */,
 				539F63401C7CE48500720C4B /* Sources */,
 				539F63411C7CE48500720C4B /* Frameworks */,
 				539F63421C7CE48500720C4B /* Resources */,
+				70AB7273295141C5B96DB68C /* Embed Pods Frameworks */,
+				370A60B86C334F63D2C8940D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,11 +284,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		370A60B86C334F63D2C8940D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwilioTest/Pods-TwilioTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F78872EE20F1B47F14763E0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		70AB7273295141C5B96DB68C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwilioTest/Pods-TwilioTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		539F63401C7CE48500720C4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				539F63761C7CE52700720C4B /* MainViewController.swift in Sources */,
 				539F634A1C7CE48500720C4B /* ViewController.swift in Sources */,
 				539F63481C7CE48500720C4B /* AppDelegate.swift in Sources */,
 			);
@@ -400,6 +479,7 @@
 		};
 		539F636D1C7CE48500720C4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFC509B8FA0D54DD8505908F /* Pods-TwilioTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TwilioTest/Info.plist;
@@ -411,6 +491,7 @@
 		};
 		539F636E1C7CE48500720C4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93223085C27E0782A392E54B /* Pods-TwilioTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TwilioTest/Info.plist;
@@ -487,6 +568,7 @@
 				539F636E1C7CE48500720C4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		539F636F1C7CE48500720C4B /* Build configuration list for PBXNativeTarget "TwilioTestTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +577,7 @@
 				539F63711C7CE48500720C4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		539F63721C7CE48500720C4B /* Build configuration list for PBXNativeTarget "TwilioTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +586,7 @@
 				539F63741C7CE48500720C4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
