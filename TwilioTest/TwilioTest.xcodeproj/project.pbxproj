@@ -491,6 +491,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = edu.southeastern.TwilioTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "TwilioTest/TwilioTest-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -508,6 +509,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = edu.southeastern.TwilioTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "TwilioTest/TwilioTest-Bridging-Header.h";
 			};
 			name = Release;
 		};
