@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C207D2C099339D7373A2EC33'
+               BlueprintIdentifier = 'E1C365F88B2DEB8F62C20758'
                BlueprintName = 'Pods-TwilioTest'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_TwilioTest.framework'>

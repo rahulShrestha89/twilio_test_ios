@@ -15,7 +15,7 @@
 		539F635D1C7CE48500720C4B /* TwilioTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539F635C1C7CE48500720C4B /* TwilioTestTests.swift */; };
 		539F63681C7CE48500720C4B /* TwilioTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539F63671C7CE48500720C4B /* TwilioTestUITests.swift */; };
 		539F63761C7CE52700720C4B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539F63751C7CE52700720C4B /* MainViewController.swift */; };
-		8065AD0EBD4BE6D75A412329 /* Pods_TwilioTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 920327223A0D7CA2DF8C01C4 /* Pods_TwilioTest.framework */; };
+		B23B53FBC6415E1F89F5D6F8 /* Pods_TwilioTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52D95BC5E22931F675B8DAF /* Pods_TwilioTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +50,9 @@
 		539F63671C7CE48500720C4B /* TwilioTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioTestUITests.swift; sourceTree = "<group>"; };
 		539F63691C7CE48500720C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		539F63751C7CE52700720C4B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		920327223A0D7CA2DF8C01C4 /* Pods_TwilioTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwilioTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93223085C27E0782A392E54B /* Pods-TwilioTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwilioTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwilioTest/Pods-TwilioTest.release.xcconfig"; sourceTree = "<group>"; };
 		CFC509B8FA0D54DD8505908F /* Pods-TwilioTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwilioTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwilioTest/Pods-TwilioTest.debug.xcconfig"; sourceTree = "<group>"; };
+		F52D95BC5E22931F675B8DAF /* Pods_TwilioTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwilioTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8065AD0EBD4BE6D75A412329 /* Pods_TwilioTest.framework in Frameworks */,
+				B23B53FBC6415E1F89F5D6F8 /* Pods_TwilioTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +147,7 @@
 		ADE451E8D36C993DAA1D18CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				920327223A0D7CA2DF8C01C4 /* Pods_TwilioTest.framework */,
+				F52D95BC5E22931F675B8DAF /* Pods_TwilioTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -483,6 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TwilioTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.southeastern.TwilioTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -495,6 +496,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TwilioTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.southeastern.TwilioTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
